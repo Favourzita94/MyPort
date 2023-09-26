@@ -3,8 +3,7 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 import CV from './CV.pdf'
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { BsSunFill } from "react-icons/bs";
-import Fade from "react-reveal/Fade";
+import { BsSunFill } from "react-icons/bs"
 import { Link } from "react-scroll";
 
 
@@ -23,7 +22,6 @@ const Home = ({ theme, changeTheme }) => {
         )}
       </div>
       <div className="container home-content">
-        <Fade left>
           <h1>Hello! I'm Favour Nkemdilim</h1>
 
           <h3>
@@ -41,8 +39,6 @@ const Home = ({ theme, changeTheme }) => {
               }}
             />
           </h3>
-        </Fade>
-        <Fade bottom>
           <div className="button-for-action">
             <Link
               to="contact"
@@ -60,7 +56,6 @@ const Home = ({ theme, changeTheme }) => {
               </a>
             </div>
           </div>
-        </Fade>
       </div>
     </div>
   );

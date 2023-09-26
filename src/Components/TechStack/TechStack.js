@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./TechStack.css";
-import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
+
 
 const TechStack = () => {
   const colors = [
@@ -69,7 +68,6 @@ const TechStack = () => {
       </div>
       <div className="row">
         {data.slice(0, showMoreTechStack).map((item, index) => (
-          <Fade right>
             <div
               className="col-xl-4 col-lg-4 col-md-6 col-md-6 col-sm-12"
               key={index}
@@ -90,15 +88,14 @@ const TechStack = () => {
                 <p>{item.name}</p>
               </div>
             </div>
-          </Fade>
         ))}
       </div>
       {showMoreTechStack >= data.length ? null : (
-        <Zoom>
+
           <span className="load-more-tech-stack" onClick={loadMore}>
             Load More
           </span>
-        </Zoom>
+      
       )}
     </div>
   );
